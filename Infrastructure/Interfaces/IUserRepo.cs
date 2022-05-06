@@ -1,10 +1,6 @@
-﻿using Domain;
+﻿
 using Domain.Models;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
 
 namespace Infrastructure.Interfaces
 {
@@ -12,8 +8,9 @@ namespace Infrastructure.Interfaces
     {
         public Task<IEnumerable<UserDTO>> GetAllUsers();
         public Task<UserDTO> GenerateUser(string fullname, string password, string email);
-        public Task<bool> Login(string email, string password);
+        public Task<string> Login(string email, string password);
         public Task<bool> Exists(string email);
+        public Task<UserIdDTO> GetUserById(string email);
 
     }
 }

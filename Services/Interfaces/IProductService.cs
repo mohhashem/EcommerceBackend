@@ -9,6 +9,7 @@ namespace Services.Interfaces
 {
     public interface IProductService
     {
-        public Task<IEnumerable<Products>> GetProducts();
+        public Task<Product> Addproduct(string ProductName, string ProductDesc, int ProductPrice, string ProductImageUrl);
+        public Task<IEnumerable<Product>> GetProducts();
     }
 }

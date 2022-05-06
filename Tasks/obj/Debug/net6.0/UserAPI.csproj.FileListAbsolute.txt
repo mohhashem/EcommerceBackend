@@ -7,9 +7,13 @@ C:\Users\User\source\repos\Domain\Tasks\bin\Debug\net6.0\UserAPI.dll
 C:\Users\User\source\repos\Domain\Tasks\bin\Debug\net6.0\UserAPI.pdb
 C:\Users\User\source\repos\Domain\Tasks\bin\Debug\net6.0\Azure.Core.dll
 C:\Users\User\source\repos\Domain\Tasks\bin\Debug\net6.0\Azure.Identity.dll
+C:\Users\User\source\repos\Domain\Tasks\bin\Debug\net6.0\Azure.Storage.Blobs.dll
+C:\Users\User\source\repos\Domain\Tasks\bin\Debug\net6.0\Azure.Storage.Common.dll
 C:\Users\User\source\repos\Domain\Tasks\bin\Debug\net6.0\Dapper.dll
 C:\Users\User\source\repos\Domain\Tasks\bin\Debug\net6.0\EntityFramework.SqlServer.dll
 C:\Users\User\source\repos\Domain\Tasks\bin\Debug\net6.0\EntityFramework.dll
+C:\Users\User\source\repos\Domain\Tasks\bin\Debug\net6.0\Microsoft.AspNet.Identity.Core.dll
+C:\Users\User\source\repos\Domain\Tasks\bin\Debug\net6.0\Microsoft.AspNet.Identity.Owin.dll
 C:\Users\User\source\repos\Domain\Tasks\bin\Debug\net6.0\Microsoft.Bcl.AsyncInterfaces.dll
 C:\Users\User\source\repos\Domain\Tasks\bin\Debug\net6.0\Microsoft.Data.SqlClient.dll
 C:\Users\User\source\repos\Domain\Tasks\bin\Debug\net6.0\Microsoft.Identity.Client.dll
@@ -20,7 +24,14 @@ C:\Users\User\source\repos\Domain\Tasks\bin\Debug\net6.0\Microsoft.IdentityModel
 C:\Users\User\source\repos\Domain\Tasks\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
 C:\Users\User\source\repos\Domain\Tasks\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
 C:\Users\User\source\repos\Domain\Tasks\bin\Debug\net6.0\Microsoft.OpenApi.dll
+C:\Users\User\source\repos\Domain\Tasks\bin\Debug\net6.0\Microsoft.Owin.dll
+C:\Users\User\source\repos\Domain\Tasks\bin\Debug\net6.0\Microsoft.Owin.Security.dll
+C:\Users\User\source\repos\Domain\Tasks\bin\Debug\net6.0\Microsoft.Owin.Security.Cookies.dll
+C:\Users\User\source\repos\Domain\Tasks\bin\Debug\net6.0\Microsoft.Owin.Security.OAuth.dll
 C:\Users\User\source\repos\Domain\Tasks\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\User\source\repos\Domain\Tasks\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\Users\User\source\repos\Domain\Tasks\bin\Debug\net6.0\Owin.dll
+C:\Users\User\source\repos\Domain\Tasks\bin\Debug\net6.0\SharpHash.dll
 C:\Users\User\source\repos\Domain\Tasks\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
 C:\Users\User\source\repos\Domain\Tasks\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\Users\User\source\repos\Domain\Tasks\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
@@ -29,6 +40,8 @@ C:\Users\User\source\repos\Domain\Tasks\bin\Debug\net6.0\System.Configuration.Co
 C:\Users\User\source\repos\Domain\Tasks\bin\Debug\net6.0\System.Data.SqlClient.dll
 C:\Users\User\source\repos\Domain\Tasks\bin\Debug\net6.0\System.Drawing.Common.dll
 C:\Users\User\source\repos\Domain\Tasks\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\User\source\repos\Domain\Tasks\bin\Debug\net6.0\System.IO.Hashing.dll
+C:\Users\User\source\repos\Domain\Tasks\bin\Debug\net6.0\System.Memory.Data.dll
 C:\Users\User\source\repos\Domain\Tasks\bin\Debug\net6.0\System.Runtime.Caching.dll
 C:\Users\User\source\repos\Domain\Tasks\bin\Debug\net6.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\User\source\repos\Domain\Tasks\bin\Debug\net6.0\System.Security.Permissions.dll

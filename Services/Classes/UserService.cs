@@ -23,9 +23,16 @@ namespace Services
             return _userRepo.GetAllUsers();
         }
 
-        public Task<bool> Login(string email, string password)
+        public Task<UserIdDTO> GetUserById(string email)
+        {
+            return _userRepo.GetUserById(email);
+        }
+
+        public Task<string> Login(string email, string password)
         {
             return _userRepo.Login(email, password);
         }
+
+       
     }
 }

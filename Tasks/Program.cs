@@ -4,7 +4,7 @@ using Infrastructure.Interfaces;
 using Services;
 using Services.Classes;
 using Services.Interfaces;
-using System.Data.Entity;
+
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -15,6 +15,10 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddScoped<IUserService, UserService>();
+builder.Services.AddScoped<IOrdersServices, OrdersServices>();
+builder.Services.AddScoped<IAdminServices, AdminServices>();
+builder.Services.AddScoped<IAdminRepo, AdminRepo>();
+builder.Services.AddScoped<IOrdersRepo, OrdersRepo>();
 builder.Services.AddScoped<IUserRepo, UserRepo>();
 builder.Services.AddScoped<IProductRep,ProductRepo>();
 builder.Services.AddScoped<IProductService, ProductService>();

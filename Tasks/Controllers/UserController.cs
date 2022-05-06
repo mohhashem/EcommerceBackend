@@ -40,12 +40,28 @@ namespace Tasks.Controllers
 
         [HttpGet]
         [Route("getUsers")]
-        public async Task<IActionResult> GetStudent()
+        public async Task<IActionResult> GetUsers()
         {
             try
             {
-                var student = await _userService.GetAllUsers();
-                return Ok(student);
+                var users = await _userService.GetAllUsers();
+                return Ok(users);
+            }
+            catch (Exception ex)
+            {
+                //log error
+                return StatusCode(500, ex.Message);
+            }
+        }
+
+        [HttpGet]
+        [Route("getId")]
+        public async Task<IActionResult> GetUserById(string email)
+        {
+            try
+            {
+                var id = await _userService.GetUserById( email);
+                return Ok(id);
             }
             catch (Exception ex)
             {

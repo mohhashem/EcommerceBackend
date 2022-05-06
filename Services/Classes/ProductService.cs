@@ -18,7 +18,12 @@ namespace Services.Classes
             _productRep = repository;
         }
 
-        public Task<IEnumerable<Products>> GetProducts()
+        public Task<Product> Addproduct(string ProductName, string ProductDesc, int ProductPrice, string ProductImageUrl)
+        {
+            return _productRep.Addproduct(ProductName, ProductDesc, ProductPrice, ProductImageUrl);
+        }
+
+        public Task<IEnumerable<Product>> GetProducts()
         {
             return _productRep.GetProducts();
         }
