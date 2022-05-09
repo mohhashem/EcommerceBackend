@@ -30,27 +30,29 @@ namespace Infrastructure
             }
         }
 
-        public async Task<UserDTO> GenerateUser(string fullname, string password,string email)
+        public async Task<bool> GenerateUser(string fullname, string password,string email)
         {
-
-            var sqlQuery = "INSERT INTO Users(UserFullName,UserEmail,UserPassword) " +
-                            "VALUES( @fullname,@email,@password)";
-
-            password   = HashFactory.Crypto.CreateMD5()
-                    .ComputeString(password,Encoding.UTF8).ToString();
-
-            using (var connection = _context.CreateConnection())
+            if(await Exists(email))
             {
-                var user = await connection.QueryAsync<UserDTO>(sqlQuery, new { fullname,password, email });
+                return false;
+            }
+            else
+            {
+                var sqlQuery = "INSERT INTO Users(UserFullName,UserEmail,UserPassword) " +
+                       "VALUES( @fullname,@email,@password)";
+
+                password = HashFactory.Crypto.CreateMD5()
+                        .ComputeString(password, Encoding.UTF8).ToString();
+
+                using (var connection = _context.CreateConnection())
+                {
+                    var user = await connection.QueryAsync<UserDTO>(sqlQuery, new { fullname, password, email });
+                }
+
+                return true;
             }
 
-            return new UserDTO
-            {
-                UserFullName = fullname,
-                UserEmail = email,
-                UserPassword = password,
-              
-            };
+       
         }
 
         public async Task<UserIdDTO> GetUserById(string email)
@@ -84,9 +86,8 @@ namespace Infrastructure
         public async Task<bool> Exists(string email)
         {
             bool exists= false;
-            var sqlQuery = "SELECT UserEmail" +
-                            "FROM Users" +
-                            "WHERE UserEmail = @email";
+            var sqlQuery = "SELECT UserEmail FROM Users " +
+                            "WHERE UserEmail = @email ";
 
             using (var connection = _context.CreateConnection())
             {

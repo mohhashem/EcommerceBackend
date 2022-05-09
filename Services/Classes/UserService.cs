@@ -12,7 +12,7 @@ namespace Services
             _userRepo = repository;
         }
 
-        public Task<UserDTO> GenerateUser(string fullname, string password, string email)
+        public Task<bool> GenerateUser(string fullname, string password, string email)
         {
 
             return _userRepo.GenerateUser(fullname, password, email);
